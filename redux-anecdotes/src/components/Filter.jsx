@@ -6,7 +6,7 @@ const Filter = () => {
       // input-kentän arvo muuttujassa event.target.value
       event.preventDefault()
       const filter = event.target.value
-      dispatch(filterChange({filter: filter}))
+      dispatch(filterChange(filter))
     }
 
     const style = {
