@@ -10,14 +10,7 @@ import notificationReducer from './reducers/notificationReducer'
 
 import anecdoteService from './services/anecdotes'
 
-
-const store = configureStore({
-  reducer: {
-    anecdotes: reducer,
-    filter: filterReducer,
-    notification: notificationReducer,
-  }
-})
+import store from './store'
 
 /*anecdoteService.getAll().then(anecdotes => 
   store.dispatch(setAnecdotes(anecdotes)))*/
